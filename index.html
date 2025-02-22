@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div class="dashboard-container">
+        <div class="heading">
+            <h2>Water Management</h2>
+            <ul>
+                <li><span>Total:</span> {{ water.total }}</li>
+                <li><span>Pending:</span> {{ water.pending }}</li>
+                <li><span>Unresolved:</span> {{ water.unresolved }}</li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h2>Power Outages</h2>
+            <ul>
+                <li><span>Total:</span> {{ power.total }}</li>
+                <li><span>Pending:</span> {{ power.pending }}</li>
+                <li><span>Unresolved:</span> {{ power.unresolved }}</li>
+            </ul>
+        </div>
+        <div class="heading">
+            <h2>Garbage</h2>
+            <ul>
+                <li><span>Total:</span> {{ garbage.total }}</li>
+                <li><span>Pending:</span> {{ garbage.pending }}</li>
+                <li><span>Unresolved:</span> {{ garbage.unresolved }}</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
